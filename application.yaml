@@ -7,14 +7,14 @@ eureka:
     service-url:
       defaultZone: ${EUREKA_SERVICE_ADDRESS:http://service-registry:8761/eureka}
 
-tracing:
-  url: http://jaeger:4318/v1/traces
+# tracing:
+#   url: http://jaeger:4318/v1/traces
 
-management:
-  tracing:
-    sampling:
-      probability: 1.0
+# management:
+#   tracing:
+#     sampling:
+#       probability: 1.0
 
-logging:
-  pattern:
-    level: '%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]'
+# logging:
+#   pattern:
+#     level: '%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]'
